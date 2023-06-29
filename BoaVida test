@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motion Graphic Example</title>
+  <style>
+    /* CSS to center the text */
+    body, html {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="motionText">Boa Vida Yacht Club</h1>
+
+  <script>
+    // Get the element
+    var motionText = document.getElementById("motionText");
+
+    // Function to animate the text
+    function animateText() {
+      // Add a CSS class to apply animation
+      motionText.classList.add("dance-animation");
+
+      // Redirect after 3 seconds
+      setTimeout(function() {
+        window.location.href = "https://boavida.com";
+      }, 3000);
+    }
+
+    // Call the animateText function when the page loads
+    window.onload = animateText;
+  </script>
+</body>
+</html>
